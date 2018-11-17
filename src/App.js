@@ -1,27 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  AppWrapper,
+  Title,
+  Subtitle,
+  Introduction,
+  Contact,
+} from './App.styled';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+    return <AppWrapper>
+        <Title>Brian D. Ridge</Title>
+        <Subtitle>Front-end web development</Subtitle>
+        <Introduction>
+          I focus on an effortless user experience when building performant, accessable, beautiful UIs. I focus on JavaScript, React, and styled-components.
+        </Introduction>
+        <Contact>Get in touch with me here</Contact>
+        <div>briandridge@gmail.com</div>
+        <div>
+          <a href="./assets/images/photos/BrianDRidge.pdf" target="_blank">
+            Resume
           </a>
-        </header>
-      </div>
-    );
+        </div>
+        <div>
+          <a href="http://www.linkedin.com/in/briandridge" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        <div>
+          <a href="http://twitter.com/briandridge" target="_blank">
+            @briandridge
+          </a>
+        </div>
+        <div>
+          <a href="http://github.com/briandridge" target="_blank">
+            Github
+          </a>
+        </div>
+        <div>My most recent project:</div>
+      </AppWrapper>;
   }
 }
 
